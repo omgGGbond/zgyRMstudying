@@ -12,6 +12,10 @@ colcon build
 在  my_package  功能包内创建一个 Python 文件publisher.py ：
 五、编写订阅者节点
 在  my_package  功能包内创建另一个 Python 文件listener.py ： 
+---------------------
+（补充点！！！！！！！！）
+在my_package中找到setup.py文件，如图（setup程序中修改的地方），对setup程序进行修改，"publisher_node=my_package.publisher:main"（意为对publisher.py建立节点，然后指明路径），保存之后运行即可（推荐再次建立功能包，以防万一）
+---------------------
 六、编译和运行
 1.回到工作空间目录：
 2. 编译功能包：
